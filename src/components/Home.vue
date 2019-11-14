@@ -135,9 +135,7 @@
             insertDatapoints(messages, chart) {
                 for (let i = 0; i < messages.length; i++) {
                     let voltageData = {
-                        Magnitude1: messages[i].v1,
-                        Magnitude2: messages[i].v2,
-                        Magnitude3: messages[i].v3
+                        papp: messages[i].papp,
                     };
                     chart.series.addData(voltageData);
                 }
