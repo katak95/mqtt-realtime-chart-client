@@ -56,7 +56,7 @@
     import Rickshaw from 'rickshaw'
     import 'rickshaw/rickshaw.min.css'
     import 'bootstrap/dist/css/bootstrap.css'
-    var socket = io.connect("http://localhost:3000");
+    var socket = io();
     var magnitudeChart;
 
     export default {
